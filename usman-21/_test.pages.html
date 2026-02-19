@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ShoeCommerce – UI Screens</title>
+<style>
+body {
+  margin:0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background:#eef1f5;
+}
+
+/* Sidebar */
+nav {
+  width:260px;
+  height:100vh;
+  position:fixed;
+  background:#1f2937;
+  color:white;
+  padding:15px;
+  overflow:auto;
+}
+nav h3 { text-align:center; }
+nav button {
+  width:100%;
+  padding:10px;
+  margin:4px 0;
+  background:#374151;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+nav button:hover { background:#4b5563; }
+
+/* Main Area */
+main {
+  margin-left:280px;
+  padding:25px;
+}
+
+.screen {
+  display:none;
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  border-bottom:2px solid #e5e7eb;
+  padding-bottom:8px;
+  margin-bottom:20px;
+}
+
+/* Form */
+input, select, textarea {
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border:1px solid #ccc;
+  border-radius:6px;
+}
+
+/* Buttons */
+.primary {
+  background:#2563eb;
+  color:white;
+  padding:10px 18px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+.primary:hover { background:#1d4ed8; }
+
+/* Tables */
+table {
+  width:100%;
+  border-collapse:collapse;
+  margin-top:10px;
+}
+th {
+  background:#f3f4f6;
+}
+th, td {
+  border:1px solid #ddd;
+  padding:10px;
+}
+
+/* Products */
+.products {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+.card {
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding:15px;
+  text-align:center;
+  box-shadow:0 2px 5px rgba(0,0,0,0.05);
+}
+.card img {
+  width:100%;
+  height:120px;
+  background:#ddd;
+  border-radius:6px;
+  margin-bottom:10px;
+}
+</style>
+
+<script>
+function show(id){
+ document.querySelectorAll('.screen').forEach(s=>s.style.display="none");
+ document.getElementById(id).style.display="block";
+}
+</script>
+</head>
+
+<body>
+
+<nav>
+<h3>ShoeCommerce</h3>
+<button onclick="show('register')">Registration</button>
+<button onclick="show('verify')">Email Verification</button>
+<button onclick="show('login')">Login</button>
+<button onclick="show('forgot')">Forgot Password</button>
+<button onclick="show('products')">Product Listing</button>
+<button onclick="show('detail')">Product Detail</button>
+<button onclick="show('cart')">Cart</button>
+<button onclick="show('checkout')">Checkout</button>
+<button onclick="show('confirm')">Order Confirmation</button>
+<button onclick="show('orders')">Order History</button>
+<button onclick="show('profile')">Profile</button>
+<button onclick="show('wishlist')">Wishlist</button>
+<hr>
+<button onclick="show('adminlogin')">Admin Login</button>
+<button onclick="show('dashboard')">Admin Dashboard</button>
+<button onclick="show('productmgmt')">Product Management</button>
+<button onclick="show('categorymgmt')">Category Management</button>
+<button onclick="show('ordermgmt')">Order Management</button>
+<button onclick="show('usermgmt')">User Management</button>
+<button onclick="show('reports')">Reports</button>
+</nav>
+
+<main>
+
+<div id="register" class="screen">
+<h2>Registration</h2>
+<input placeholder="Full Name">
+<input placeholder="Email">
+<input placeholder="Password">
+<input placeholder="Phone Number">
+<textarea placeholder="Shipping Address"></textarea>
+<button class="primary">Sign Up</button>
+</div>
+
+<div id="verify" class="screen">
+<h2>Email Verification</h2>
+<p>✔ Your email has been verified successfully.</p>
+<button class="primary">Go to Login</button>
+</div>
+
+<div id="login" class="screen">
+<h2>Login</h2>
+<input placeholder="Email">
+<input placeholder="Password">
+<button class="primary">Login</button>
+<p><a>Forgot Password</a> | <a>Register</a></p>
+</div>
+
+<div id="forgot" class="screen">
+<h2>Reset Password</h2>
+<input placeholder="Email">
+<input placeholder="New Password">
+<input placeholder="Confirm Password">
+<button class="primary">Reset Password</button>
+</div>
+
+<div id="products" class="screen">
+<h2>Product Listing</h2>
+<input placeholder="Search shoes">
+<select><option>Category</option></select>
+<select><option>Brand</option></select>
+<select><option>Size</option></select>
+
+<div class="products">
+<div class="card"><img src="https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg">Shoe 1<br>Rs.3000<br><button>Add to Cart</button></div>
+<div class="card"><img src="https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg">Shoe 2<br>Rs.3500<br><button>Add to Cart</button></div>
+<div class="card"><img src="https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg">Shoe 3<br>Rs.4000<br><button>Add to Cart</button></div>
+</div>
+</div>
+
+<div id="detail" class="screen">
+<h2>Product Detail</h2>
+<p><b>Nike Runner</b></p>
+<p>Price: Rs.4000</p>
+<select><option>Select Size</option></select>
+<select><option>Select Color</option></select>
+<p>Comfortable running shoes.</p>
+<button class="primary">Add to Cart</button>
+</div>
+
+<div id="cart" class="screen">
+<h2>Shopping Cart</h2>
+<table>
+<tr><th>Product</th><th>Qty</th><th>Price</th></tr>
+<tr><td>Shoe 1</td><td>2</td><td>6000</td></tr>
+</table>
+<p><b>Subtotal:</b> Rs.6000</p>
+<input placeholder="Coupon Code">
+<button class="primary">Proceed to Checkout</button>
+</div>
+
+<div id="checkout" class="screen">
+<h2>Checkout</h2>
+<textarea placeholder="Shipping Address"></textarea>
+<input placeholder="Card Number">
+<input placeholder="Expiry Date">
+<input placeholder="CVV">
+<button class="primary">Place Order</button>
+</div>
+
+<div id="confirm" class="screen">
+<h2>Order Confirmation</h2>
+<p>Order ID: #12345</p>
+<p>Total: Rs.6000</p>
+<p>Delivery in 3 days</p>
+</div>
+
+<div id="orders" class="screen">
+<h2>Order History</h2>
+<table>
+<tr><th>Order</th><th>Date</th><th>Total</th><th>Status</th></tr>
+<tr><td>#12345</td><td>12-02-2026</td><td>6000</td><td>Shipped</td></tr>
+</table>
+</div>
+
+<div id="profile" class="screen">
+<h2>Profile</h2>
+<input value="Mr Ahmad">
+<input value="ahmad@email.com">
+<input value="0300123456">
+<textarea>Home Address</textarea>
+<button class="primary">Update Profile</button>
+</div>
+
+<div id="wishlist" class="screen">
+<h2>Wishlist</h2>
+<div class="products">
+<div class="card"><img src="https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg">Shoe A<br><button>Add to Cart</button></div>
+<div class="card"><img src="https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg">Shoe B<br><button>Add to Cart</button></div>
+</div>
+</div>
+
+<div id="adminlogin" class="screen">
+<h2>Admin Login</h2>
+<input placeholder="Email">
+<input placeholder="Password">
+<button class="primary">Login</button>
+</div>
+
+<div id="dashboard" class="screen">
+<h2>Admin Dashboard</h2>
+<p>Total Orders: 120</p>
+<p>Total Revenue: Rs.500,000</p>
+<p>Total Users: 340</p>
+</div>
+
+<div id="productmgmt" class="screen">
+<h2>Product Management</h2>
+<table>
+<tr><th>Name</th><th>Category</th><th>Price</th><th>Stock</th></tr>
+<tr><td>Nike</td><td>Sports</td><td>4000</td><td>20</td></tr>
+</table>
+<button class="primary">Add Product</button>
+</div>
+
+<div id="categorymgmt" class="screen">
+<h2>Category Management</h2>
+<table>
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>Sports</td><td>Running shoes</td></tr>
+</table>
+<button class="primary">Add Category</button>
+</div>
+
+<div id="ordermgmt" class="screen">
+<h2>Order Management</h2>
+<table>
+<tr><th>ID</th><th>Customer</th><th>Total</th><th>Status</th></tr>
+<tr>
+<td>12345</td><td>Ali</td><td>6000</td>
+<td>
+<select>
+<option>Pending</option>
+<option>Shipped</option>
+<option>Delivered</option>
+</select>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="usermgmt" class="screen">
+<h2>User Management</h2>
+<table>
+<tr><th>Name</th><th>Email</th><th>Status</th></tr>
+<tr><td>Ali</td><td>ali@email.com</td><td>Active</td></tr>
+</table>
+</div>
+
+<div id="reports"  class="screen">
+<h2>Reports</h2>
+<select><option>Sales</option><option>Orders</option></select>
+<input type="date">
+<input type="date">
+<button class="primary">Generate Report</button>
+</div>
+
+</main>
+</body>
+</html>
