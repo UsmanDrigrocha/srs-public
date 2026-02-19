@@ -9763,7 +9763,7 @@
 <XPD:OBJ name="OwnedElements[1]" type="UMLModel" guid="4oUQ6yfSlEaq1hvUqljs6AAA">
 <XPD:ATTR name="Name" type="string">Classes</XPD:ATTR>
 <XPD:REF name="Namespace">qqfQB50rHUSuMRAV2URQTAAA</XPD:REF>
-<XPD:ATTR name="#OwnedDiagrams" type="integer">13</XPD:ATTR>
+<XPD:ATTR name="#OwnedDiagrams" type="integer">12</XPD:ATTR>
 <XPD:OBJ name="OwnedDiagrams[0]" type="UMLClassDiagram" guid="lm1I2ZiVDkyf4aEYsxAn0QAA">
 <XPD:ATTR name="Name" type="string">User</XPD:ATTR>
 <XPD:REF name="DiagramOwner">4oUQ6yfSlEaq1hvUqljs6AAA</XPD:REF>
@@ -9805,15 +9805,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedDiagrams[1]" type="UMLClassDiagram" guid="VzKo4z/fvk6Phv3cGHs3SQAA">
-<XPD:ATTR name="Name" type="string">Product</XPD:ATTR>
-<XPD:REF name="DiagramOwner">4oUQ6yfSlEaq1hvUqljs6AAA</XPD:REF>
-<XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="KeBgJ7UaYU+LnufdLwSlOAAA">
-<XPD:REF name="Model">VzKo4z/fvk6Phv3cGHs3SQAA</XPD:REF>
-<XPD:REF name="Diagram">VzKo4z/fvk6Phv3cGHs3SQAA</XPD:REF>
-</XPD:OBJ>
-</XPD:OBJ>
-<XPD:OBJ name="OwnedDiagrams[2]" type="UMLClassDiagram" guid="iAvEtpE8m0OqT4u/h3UYwAAA">
+<XPD:OBJ name="OwnedDiagrams[1]" type="UMLClassDiagram" guid="iAvEtpE8m0OqT4u/h3UYwAAA">
 <XPD:ATTR name="Name" type="string">Database Connection</XPD:ATTR>
 <XPD:REF name="DiagramOwner">4oUQ6yfSlEaq1hvUqljs6AAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="2FKXatAOYEG8AYfABVJPxQAA">
@@ -9854,7 +9846,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedDiagrams[3]" type="UMLClassDiagram" guid="+8x9wdZ2xkymrRoCzX85zwAA">
+<XPD:OBJ name="OwnedDiagrams[2]" type="UMLClassDiagram" guid="+8x9wdZ2xkymrRoCzX85zwAA">
 <XPD:ATTR name="Name" type="string">Coupon</XPD:ATTR>
 <XPD:REF name="DiagramOwner">4oUQ6yfSlEaq1hvUqljs6AAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="f8X9SrGm7EeZ/+Oqu4iSOwAA">
@@ -9895,7 +9887,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedDiagrams[4]" type="UMLClassDiagram" guid="n32g+03UYUKzXV9SRak3IAAA">
+<XPD:OBJ name="OwnedDiagrams[3]" type="UMLClassDiagram" guid="n32g+03UYUKzXV9SRak3IAAA">
 <XPD:ATTR name="Name" type="string">Payment</XPD:ATTR>
 <XPD:REF name="DiagramOwner">4oUQ6yfSlEaq1hvUqljs6AAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="g7NStl8dZUOtfq7UrgpZJAAA">
@@ -9936,7 +9928,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedDiagrams[5]" type="UMLClassDiagram" guid="68rt4SSGskq65r3uScjhowAA">
+<XPD:OBJ name="OwnedDiagrams[4]" type="UMLClassDiagram" guid="68rt4SSGskq65r3uScjhowAA">
 <XPD:ATTR name="Name" type="string">OrderItem</XPD:ATTR>
 <XPD:REF name="DiagramOwner">4oUQ6yfSlEaq1hvUqljs6AAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="Kpje44vBa0m89zUpZzuZXQAA">
@@ -9977,7 +9969,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedDiagrams[6]" type="UMLClassDiagram" guid="ev5FGUPfhkyInvbNA3e0rgAA">
+<XPD:OBJ name="OwnedDiagrams[5]" type="UMLClassDiagram" guid="ev5FGUPfhkyInvbNA3e0rgAA">
 <XPD:ATTR name="Name" type="string">Order</XPD:ATTR>
 <XPD:REF name="DiagramOwner">4oUQ6yfSlEaq1hvUqljs6AAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="q65HfPsJmE6H01BsR5XQ9wAA">
@@ -10018,7 +10010,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedDiagrams[7]" type="UMLClassDiagram" guid="BoUEx2wOhku8wJWTwCPm1QAA">
+<XPD:OBJ name="OwnedDiagrams[6]" type="UMLClassDiagram" guid="BoUEx2wOhku8wJWTwCPm1QAA">
 <XPD:ATTR name="Name" type="string">Wishlist</XPD:ATTR>
 <XPD:REF name="DiagramOwner">4oUQ6yfSlEaq1hvUqljs6AAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="swWi1SASgUi0nu+TJtckhgAA">
@@ -10059,7 +10051,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedDiagrams[8]" type="UMLClassDiagram" guid="/R2pE6hlnEi4n7QwIQa9+wAA">
+<XPD:OBJ name="OwnedDiagrams[7]" type="UMLClassDiagram" guid="/R2pE6hlnEi4n7QwIQa9+wAA">
 <XPD:ATTR name="Name" type="string">CartItem</XPD:ATTR>
 <XPD:REF name="DiagramOwner">4oUQ6yfSlEaq1hvUqljs6AAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="qNMOYa1H3USquiv7gMnpAAAA">
@@ -10100,7 +10092,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedDiagrams[9]" type="UMLClassDiagram" guid="yTPd4kn8E0mr7QIVAKtVMgAA">
+<XPD:OBJ name="OwnedDiagrams[8]" type="UMLClassDiagram" guid="yTPd4kn8E0mr7QIVAKtVMgAA">
 <XPD:ATTR name="Name" type="string">Cart</XPD:ATTR>
 <XPD:REF name="DiagramOwner">4oUQ6yfSlEaq1hvUqljs6AAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="Ro//wvrR2USb1V3TyIQBPgAA">
@@ -10141,7 +10133,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedDiagrams[10]" type="UMLClassDiagram" guid="DwtwyD51ZUu3mifS8YRW0QAA">
+<XPD:OBJ name="OwnedDiagrams[9]" type="UMLClassDiagram" guid="DwtwyD51ZUu3mifS8YRW0QAA">
 <XPD:ATTR name="Name" type="string">Category</XPD:ATTR>
 <XPD:REF name="DiagramOwner">4oUQ6yfSlEaq1hvUqljs6AAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="ilAd5O2A+kGII074cEgVKwAA">
@@ -10182,7 +10174,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedDiagrams[11]" type="UMLClassDiagram" guid="az0vLS6d9UutYG5pYaKRgQAA">
+<XPD:OBJ name="OwnedDiagrams[10]" type="UMLClassDiagram" guid="az0vLS6d9UutYG5pYaKRgQAA">
 <XPD:ATTR name="Name" type="string">Admin</XPD:ATTR>
 <XPD:REF name="DiagramOwner">4oUQ6yfSlEaq1hvUqljs6AAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="xa4/4sfB/UClzXJ84/GRJAAA">
@@ -10223,7 +10215,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedDiagrams[12]" type="UMLClassDiagram" guid="x4HQPn3gw0+6rNs3ZpYQxwAA">
+<XPD:OBJ name="OwnedDiagrams[11]" type="UMLClassDiagram" guid="x4HQPn3gw0+6rNs3ZpYQxwAA">
 <XPD:ATTR name="Name" type="string">Product</XPD:ATTR>
 <XPD:REF name="DiagramOwner">4oUQ6yfSlEaq1hvUqljs6AAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="vIzV46qbqESm89dFfE7QHwAA">
