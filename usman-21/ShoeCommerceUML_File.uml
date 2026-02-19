@@ -9814,7 +9814,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedDiagrams[2]" type="UMLClassDiagram" guid="iAvEtpE8m0OqT4u/h3UYwAAA">
-<XPD:ATTR name="Name" type="string">Database_Connection</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">Database Connection</XPD:ATTR>
 <XPD:REF name="DiagramOwner">4oUQ6yfSlEaq1hvUqljs6AAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="2FKXatAOYEG8AYfABVJPxQAA">
 <XPD:REF name="Model">iAvEtpE8m0OqT4u/h3UYwAAA</XPD:REF>
