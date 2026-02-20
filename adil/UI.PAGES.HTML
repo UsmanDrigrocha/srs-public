@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HMS UI Architecture</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f6f8;
+}
+header{
+    background:#0d6efd;
+    color:white;
+    padding:15px;
+    text-align:center;
+    font-size:22px;
+}
+.container{
+    display:flex;
+}
+nav{
+    width:260px;
+    background:#ffffff;
+    border-right:1px solid #ddd;
+    padding:10px;
+    height:100vh;
+    overflow-y:auto;
+}
+nav button{
+    width:100%;
+    padding:10px;
+    margin:5px 0;
+    border:none;
+    background:#e9ecef;
+    cursor:pointer;
+    text-align:left;
+    border-radius:5px;
+}
+nav button:hover{
+    background:#0d6efd;
+    color:white;
+}
+main{
+    flex:1;
+    padding:20px;
+}
+.screen{
+    display:none;
+    background:white;
+    padding:20px;
+    border-radius:6px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+.screen h2{
+    margin-top:0;
+    color:#0d6efd;
+}
+input,select,button{
+    padding:8px;
+    margin:6px 0;
+    width:100%;
+}
+.card{
+    background:#f1f1f1;
+    padding:10px;
+    border-radius:5px;
+    margin:8px 0;
+}
+.table{
+    width:100%;
+    border-collapse:collapse;
+}
+.table th,.table td{
+    border:1px solid #ccc;
+    padding:8px;
+}
+.badge{
+    background:#0d6efd;
+    color:white;
+    padding:3px 8px;
+    border-radius:4px;
+}
+</style>
+</head>
+<body>
+
+<header>Hospital Management System – UI Architecture</header>
+
+<div class="container">
+<nav>
+<b>Authentication</b>
+<button onclick="show('login')">Login Screen</button>
+<button onclick="show('register')">Registration Screen</button>
+<button onclick="show('forgot')">Forgot Password</button>
+<button onclick="show('reset')">Reset Password</button>
+
+<b>Dashboards</b>
+<button onclick="show('patientdash')">Patient Dashboard</button>
+<button onclick="show('doctordash')">Doctor Dashboard</button>
+<button onclick="show('admindash')">Admin Dashboard</button>
+
+<b>Patient</b>
+<button onclick="show('appointment')">Appointment Booking</button>
+<button onclick="show('medical')">Medical Record View</button>
+</nav>
+
+<main>
+
+<div id="login" class="screen">
+<h2>Login Screen</h2>
+<input placeholder="Email">
+<input placeholder="Password" type="password">
+<button>Login</button>
+<a href="#">Forgot Password?</a>
+</div>
+
+<div id="register" class="screen">
+<h2>Registration Screen</h2>
+<input placeholder="Full Name">
+<input placeholder="Email">
+<input placeholder="Phone">
+<select>
+<option>Patient</option>
+<option>Doctor</option>
+</select>
+<input placeholder="Password" type="password">
+<button>Register</button>
+</div>
+
+<div id="forgot" class="screen">
+<h2>Forgot Password</h2>
+<input placeholder="Registered Email">
+<button>Send Reset Link</button>
+</div>
+
+<div id="reset" class="screen">
+<h2>Reset Password</h2>
+<input placeholder="New Password" type="password">
+<input placeholder="Confirm Password" type="password">
+<button>Update Password</button>
+</div>
+
+<div id="patientdash" class="screen">
+<h2>Patient Dashboard</h2>
+<div class="card">Upcoming Appointments: 2</div>
+<div class="card">Recent Lab Results: 1</div>
+<div class="card">Active Prescriptions: 3</div>
+<button>Book Appointment</button>
+<button>View Medical History</button>
+</div>
+
+<div id="doctordash" class="screen">
+<h2>Doctor Dashboard</h2>
+<div class="card">Today's Appointments: 8</div>
+<div class="card">Pending Prescriptions: 2</div>
+<div class="card">Lab Tests to Review: 3</div>
+</div>
+
+<div id="admindash" class="screen">
+<h2>Admin Dashboard</h2>
+<div class="card">Total Users: 340</div>
+<div class="card">Active Appointments Today: 42</div>
+<div class="card">Available Beds: 18</div>
+<div class="card">Pending Invoices: 6</div>
+</div>
+
+<div id="appointment" class="screen">
+<h2>Appointment Booking</h2>
+<select>
+<option>Select Department</option>
+<option>Cardiology</option>
+<option>Neurology</option>
+</select>
+<select>
+<option>Select Doctor</option>
+<option>Dr. Ali</option>
+<option>Dr. Ahmed</option>
+</select>
+<input type="date">
+<button>Confirm Booking</button>
+</div>
+
+<div id="medical" class="screen">
+<h2>Medical Record View</h2>
+<table class="table">
+<tr><th>Date</th><th>Doctor</th><th>Diagnosis</th><th>Status</th></tr>
+<tr><td>2025-01-10</td><td>Dr. Ali</td><td>Flu</td><td><span class="badge">Completed</span></td></tr>
+<tr><td>2025-02-05</td><td>Dr. Ahmed</td><td>Checkup</td><td><span class="badge">Completed</span></td></tr>
+</table>
+</div>
+
+</main>
+</div>
+
+<script>
+function show(id){
+    let screens=document.querySelectorAll('.screen');
+    screens.forEach(s=>s.style.display='none');
+    document.getElementById(id).style.display='block';
+}
+show('login');
+</script>
+
+</body>
+</html>
