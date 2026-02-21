@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EduSuite UI Mockups</title>
+<style>
+body{margin:0;font-family:Segoe UI;background:#f2f4f7}
+header{background:#1e40af;color:white;padding:15px;font-size:22px;text-align:center}
+nav{width:260px;position:fixed;height:100vh;background:#fff;border-right:1px solid #ddd;padding:10px;overflow:auto}
+nav button{width:100%;padding:10px;margin:4px 0;border:none;background:#e5e7eb;border-radius:6px;text-align:left;cursor:pointer}
+nav button:hover{background:#1e40af;color:white}
+main{margin-left:280px;padding:20px}
+.screen{display:none;background:white;padding:20px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,.1)}
+h2{border-bottom:2px solid #ddd;padding-bottom:6px}
+input,select,textarea{width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid #ccc}
+button.primary{background:#1e40af;color:white;border:none;padding:10px 15px;border-radius:6px}
+.card{background:#eef2ff;padding:10px;border-radius:6px;margin:6px 0}
+table{width:100%;border-collapse:collapse;margin-top:10px}
+th,td{border:1px solid #ccc;padding:8px}
+.badge{padding:3px 8px;border-radius:5px;color:white}
+.present{background:green}
+.absent{background:red}
+.late{background:orange}
+</style>
+
+<script>
+function show(id){
+document.querySelectorAll('.screen').forEach(s=>s.style.display="none");
+document.getElementById(id).style.display="block";
+}
+</script>
+</head>
+
+<body>
+<header>EduSuite – UI Architecture Mockups</header>
+
+<nav>
+<b>Auth</b>
+<button onclick="show('login')">Login</button>
+<button onclick="show('forgot')">Forgot Password</button>
+<button onclick="show('reset')">Reset Password</button>
+
+<b>Student</b>
+<button onclick="show('sdash')">Student Dashboard</button>
+<button onclick="show('timetable')">Student Timetable</button>
+<button onclick="show('assignments')">Student Assignments</button>
+<button onclick="show('attendance')">Student Attendance</button>
+<button onclick="show('results')">Student Results</button>
+
+<b>Teacher</b>
+<button onclick="show('tdash')">Teacher Dashboard</button>
+<button onclick="show('markatt')">Mark Attendance</button>
+<button onclick="show('postass')">Post Assignment</button>
+<button onclick="show('grades')">Grade Entry</button>
+
+<b>Admin</b>
+<button onclick="show('adash')">Admin Dashboard</button>
+<button onclick="show('users')">User Management</button>
+<button onclick="show('tmanage')">Timetable Management</button>
+</nav>
+
+<main>
+
+<div id="login" class="screen">
+<h2>Login Screen</h2>
+<input placeholder="Email">
+<input placeholder="Password" type="password">
+<button class="primary">Login</button>
+<p><a>Forgot Password?</a></p>
+</div>
+
+<div id="forgot" class="screen">
+<h2>Forgot Password</h2>
+<input placeholder="Registered Email">
+<button class="primary">Send Reset Link</button>
+<p>Confirmation message shown regardless of email validity.</p>
+</div>
+
+<div id="reset" class="screen">
+<h2>Reset Password</h2>
+<input placeholder="New Password" type="password">
+<input placeholder="Confirm Password" type="password">
+<button class="primary">Reset Password</button>
+</div>
+
+<div id="sdash" class="screen">
+<h2>Student Dashboard</h2>
+<div class="card">Enrolled Courses: 5</div>
+<div class="card">Upcoming Assignments: 3</div>
+<div class="card">Attendance: 85%</div>
+<div class="card">Announcements: Midterm Exams Next Week</div>
+<button class="primary">Timetable</button>
+<button class="primary">Assignments</button>
+<button class="primary">Attendance</button>
+<button class="primary">Results</button>
+</div>
+
+<div id="timetable" class="screen">
+<h2>Student Timetable</h2>
+<table>
+<tr><th>Day</th><th>Time</th><th>Course</th><th>Teacher</th><th>Room</th></tr>
+<tr><td>Mon</td><td>9-10</td><td>Math</td><td>Mr. Ali</td><td>101</td></tr>
+<tr><td>Tue</td><td>10-11</td><td>Physics</td><td>Ms. Sara</td><td>102</td></tr>
+</table>
+</div>
+
+<div id="assignments" class="screen">
+<h2>Student Assignments</h2>
+<table>
+<tr><th>Title</th><th>Course</th><th>Posted</th><th>Deadline</th></tr>
+<tr><td>Algebra HW</td><td>Math</td><td>1 Feb</td><td>5 Feb</td></tr>
+<tr><td>Lab Report</td><td>Physics</td><td>2 Feb</td><td><span style="color:red">4 Feb</span></td></tr>
+</table>
+</div>
+
+<div id="attendance" class="screen">
+<h2>Student Attendance</h2>
+<table>
+<tr><th>Date</th><th>Course</th><th>Status</th></tr>
+<tr><td>1 Feb</td><td>Math</td><td><span class="badge present">Present</span></td></tr>
+<tr><td>2 Feb</td><td>Physics</td><td><span class="badge late">Late</span></td></tr>
+</table>
+<p><b>Attendance Percentage: 85%</b></p>
+</div>
+
+<div id="results" class="screen">
+<h2>Student Results</h2>
+<table>
+<tr><th>Course</th><th>Score</th><th>Grade</th></tr>
+<tr><td>Math</td><td>88</td><td>A</td></tr>
+<tr><td>Physics</td><td>75</td><td>B</td></tr>
+</table>
+</div>
+
+<div id="tdash" class="screen">
+<h2>Teacher Dashboard</h2>
+<div class="card">Assigned Courses: 3</div>
+<div class="card">Total Students: 90</div>
+<div class="card">Pending Grades: 2</div>
+<div class="card">Announcements: Staff Meeting Tomorrow</div>
+</div>
+
+<div id="markatt" class="screen">
+<h2>Mark Attendance</h2>
+<select><option>Select Course</option></select>
+<input type="date">
+<table>
+<tr><th>Student</th><th>Status</th></tr>
+<tr><td>Ali</td><td><select><option>Present</option><option>Absent</option><option>Late</option></select></td></tr>
+<tr><td>Sara</td><td><select><option>Present</option><option>Absent</option><option>Late</option></select></td></tr>
+</table>
+<button class="primary">Save Attendance</button>
+</div>
+
+<div id="postass" class="screen">
+<h2>Post Assignment</h2>
+<input placeholder="Assignment Title">
+<textarea placeholder="Description"></textarea>
+<input type="date">
+<button class="primary">Post Assignment</button>
+</div>
+
+<div id="grades" class="screen">
+<h2>Grade Entry</h2>
+<table>
+<tr><th>Student</th><th>Score</th></tr>
+<tr><td>Ali</td><td><input></td></tr>
+<tr><td>Sara</td><td><input></td></tr>
+</table>
+<button class="primary">Submit Grades</button>
+</div>
+
+<div id="adash" class="screen">
+<h2>Administrator Dashboard</h2>
+<div class="card">Total Students: 500</div>
+<div class="card">Total Teachers: 40</div>
+<div class="card">Active Courses: 60</div>
+<div class="card">Published Timetables: 10</div>
+</div>
+
+<div id="users" class="screen">
+<h2>User Management</h2>
+<table>
+<tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th></tr>
+<tr><td>Ali</td><td>ali@mail.com</td><td>Student</td><td>Active</td></tr>
+<tr><td>Sara</td><td>sara@mail.com</td><td>Teacher</td><td>Active</td></tr>
+</table>
+<button class="primary">Add User</button>
+</div>
+
+<div id="tmanage" class="screen">
+<h2>Timetable Management</h2>
+<select><option>Course</option></select>
+<select><option>Teacher</option></select>
+<select><option>Day</option></select>
+<input type="time">
+<input placeholder="Room">
+<button class="primary">Add Slot</button>
+<button class="primary">Publish Timetable</button>
+</div>
+
+</main>
+</body>
+</html>
