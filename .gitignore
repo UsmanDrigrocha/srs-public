@@ -1,3 +1,5 @@
 # Ignore temporary files
 ~$man*
 *.tmp
+config.bat
+node_modules
